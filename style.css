@@ -1,0 +1,119 @@
+
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: sans-serif;
+	font-size: 20px;
+}
+
+
+.container {
+	width: 90%;
+	margin-top: -23px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.app-header {
+	background-color: blue;
+	box-shadow: 3px 3px 10px #888;
+}
+
+.app-header .logo{
+	width: 170px;
+	margin-bottom: 16px;
+}
+
+.app-header .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 10px;
+}
+
+.app-header input[type='text'] {
+	padding: 7px;
+	width: 300px;
+	border-radius: 3px;
+}
+
+.subheader {
+	background: lightblue;
+	box-shadow: 3px 3px 10px #888;
+	margin-top: 0 auto 16px auto;
+	font-size: 14px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 8px;
+overflow-wrap: auto;
+}
+
+.grid .item{
+display: flex;
+flex-direction: column;
+border: 1px #ccc solid;
+padding: 10px;
+box-shadow: 1px 1px 2px #ccc;
+}
+
+.grid .item h4{
+	margin-bottom: 5px;
+}
+.grid .item p{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.grid .item img{
+	width: 30px;
+	align-self: flex-end;
+}
+
+.app-footer {
+	background: lightblue;
+	color: blue;
+	padding: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+	height: 50px;
+}
+
+.app-footer p{
+	font-style: bold;
+	font-size: 17px;
+	font: open sans;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.app-footer ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app-footer ul li i{
+	font-size: 22px;
+}
+
+
+@media screen and (max-width: 667px) {
+  
+html{
+	width: 100vw;
+	overflow-x: hidden;
+}
+}
